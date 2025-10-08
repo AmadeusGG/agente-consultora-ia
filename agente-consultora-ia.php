@@ -307,7 +307,7 @@ add_shortcode('consultoria_gpt', function() {
     document.body.appendChild(overlay);
 
     const header = document.createElement('div');
-    header.style.cssText = 'position:relative;background:linear-gradient(135deg,#0e0f1a,#1f2233);color:#f8fafc;padding:28px 16px;text-align:center;border-bottom:1px solid rgba(255,255,255,.08);';
+    header.style.cssText = 'position:relative;background:color:#f8fafc;padding:28px 16px;text-align:center;border-bottom:1px solid rgba(255,255,255,.08);';
     header.innerHTML = `
       <button id="ci-gpt-close" style="position:absolute;top:16px;right:16px;background:none;border:none;color:#fff;font-size:24px;line-height:1;cursor:pointer;">×</button>
       ${logoUrl ? `<img src="${logoUrl}" alt="logo" style="width:250px;height:64px;border-radius:14px;object-fit:cover;display:block;margin:0 auto 12px;box-shadow:0 8px 24px rgba(0,0,0,.45);">` : ''}
