@@ -323,7 +323,7 @@ add_shortcode('consultoria_gpt', function() {
         <table id="ci-terms-table" style="width:100%;max-width:420px;border-collapse:collapse;">
           <tr>
             <td style="width:16%;vertical-align:top;"><input type="checkbox" id="ci-gpt-terms" required></td>
-            <td style="width:84%;font-size:12px;color:#94a3b8;line-height:1.5;">Acepto los <a href="https://consultorainteligenciaartificial.es/terminos-y-condiciones/" target="_blank" rel="noopener" style="color:#facc15;">Términos de servicio</a> y la <a href="https://consultorainteligenciaartificial.es/politica-de-privacidad/" target="_blank" rel="noopener" style="color:#facc15;">Política de privacidad</a>.</td>
+            <td style="width:84%;font-size:12px;color:#94a3b8;line-height:1.5;">Acepto los <a href="https://consultorainteligenciaartificial.es/terminos-y-condiciones/" target="_blank" rel="noopener" style="color:#B366FF;">Términos de servicio</a> y la <a href="https://consultorainteligenciaartificial.es/politica-de-privacidad/" target="_blank" rel="noopener" style="color:#B366FF;">Política de privacidad</a>.</td>
           </tr>
         </table>
         <div id="ci-gpt-google" style="width:100%;max-width:420px;box-sizing:border-box;"></div>
@@ -336,14 +336,14 @@ add_shortcode('consultoria_gpt', function() {
     #ci-terms-table td:first-child{width:20%;}
     #ci-terms-table td:last-child{width:80%;}
     @media(max-width:480px){#ci-terms-table td{display:block;width:100%;}#ci-terms-table td:first-child{margin-bottom:8px;}}
-    #ci-gpt-terms{transform:scale(1.5);accent-color:#facc15;filter:drop-shadow(0 0 2px rgba(250,204,21,.4));animation:ciTermsPulse 1s infinite alternate;}
+    #ci-gpt-terms{transform:scale(1.5);accent-color:#B366FF;filter:drop-shadow(0 0 2px rgba(250,204,21,.4));animation:ciTermsPulse 1s infinite alternate;}
     @media(max-width:768px){#ci-gpt-terms{transform:scale(2);}}
     @keyframes ciTermsPulse{from{filter:drop-shadow(0 0 2px rgba(250,204,21,.35));}to{filter:drop-shadow(0 0 8px rgba(250,204,21,.65));}}`;
     overlay.appendChild(style);
 
     const footer = document.createElement('div');
     footer.style.cssText = 'text-align:center;font-size:15px;color:#94a3b8;padding:18px;background:#040509;border-top:1px solid rgba(255,255,255,.06);';
-    footer.innerHTML = '<div class="footer-html-inner"><p>© 2025 consultorainteligenciaartificial.es</p><p><a href="https://consultorainteligenciaartificial.es/politica-de-cookies/" target="_blank" rel="nofollow noopener noreferrer" style="color:#facc15;">Política de Cookies</a> |<br><a href="https://consultorainteligenciaartificial.es/politica-de-privacidad/" target="_blank" rel="nofollow noopener noreferrer" style="color:#facc15;">Política de Privacidad</a> |<br><a href="https://consultorainteligenciaartificial.es/aviso-legal/" target="_blank" rel="nofollow noopener noreferrer" style="color:#facc15;">Aviso Legal</a></p></div>';
+    footer.innerHTML = '<div class="footer-html-inner"><p>© 2025 consultorainteligenciaartificial.es</p><p><a href="https://consultorainteligenciaartificial.es/politica-de-cookies/" target="_blank" rel="nofollow noopener noreferrer" style="color:#B366FF;">Política de Cookies</a> |<br><a href="https://consultorainteligenciaartificial.es/politica-de-privacidad/" target="_blank" rel="nofollow noopener noreferrer" style="color:#B366FF;">Política de Privacidad</a> |<br><a href="https://consultorainteligenciaartificial.es/aviso-legal/" target="_blank" rel="nofollow noopener noreferrer" style="color:#B366FF;">Aviso Legal</a></p></div>';
     overlay.appendChild(footer);
 
     const closeBtn = overlay.querySelector('#ci-gpt-close');
