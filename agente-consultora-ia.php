@@ -433,10 +433,10 @@ add_shortcode('consultoria_gpt', function() {
     --bubble-user-border:#4338ca;
   }
   .wrap{ position:absolute; inset:0; display:flex; flex-direction:column; width:100%; height:100%; margin:0; border:none; border-radius:0; overflow:hidden; background:var(--surface); box-shadow:none; }
-  .header{ position:relative; text-align:center; padding:26px 18px 20px; border-bottom:1px solid rgba(99,102,241,.25); }
+  .header{ position:relative; text-align:center; border-bottom:1px solid rgba(99,102,241,.25); }
   .logout{ position:absolute; top:14px; right:14px; background:rgba(15,23,42,.55); border:1px solid rgba(99,102,241,.4); color:#e0e7ff; cursor:pointer; font-size:13px; border-radius:999px; padding:6px 14px; letter-spacing:.02em; transition:background .2s,border-color .2s; }
   .logout:hover{ background:rgba(99,102,241,.2); border-color:rgba(129,140,248,.6); }
-  .header img{ max-height:64px; margin:0 auto 10px; display:block; border-radius:14px; box-shadow:0 12px 30px rgba(15,23,42,.45); }
+  .header img{ max-height:150px; margin:0 auto 10px; display:block; border-radius:14px; box-shadow:0 12px 30px rgba(15,23,42,.45); }
   .title{ margin:6px 0 4px; font-size: clamp(20px,2.6vw,26px); font-weight:700; letter-spacing:.03em; text-transform:uppercase; color:#f1f5f9; }
   .desc{ margin:0 auto; max-width:520px; font-size:clamp(13px,2vw,15px); color:#cbd5f5; line-height:1.6; }
   .chips{ display:flex; gap:10px; flex-wrap:wrap; justify-content:center; padding:14px 16px; background:var(--surface-alt); border-bottom:1px solid var(--border); overflow-x:auto; scroll-snap-type:x mandatory; }
