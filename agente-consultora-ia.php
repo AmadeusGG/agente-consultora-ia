@@ -310,7 +310,7 @@ add_shortcode('consultoria_gpt', function() {
     header.style.cssText = 'position:relative;background:linear-gradient(135deg,#0e0f1a,#1f2233);color:#f8fafc;padding:28px 16px;text-align:center;border-bottom:1px solid rgba(255,255,255,.08);';
     header.innerHTML = `
       <button id="ci-gpt-close" style="position:absolute;top:16px;right:16px;background:none;border:none;color:#fff;font-size:24px;line-height:1;cursor:pointer;">×</button>
-      ${logoUrl ? `<img src="${logoUrl}" alt="logo" style="width:64px;height:64px;border-radius:14px;object-fit:cover;display:block;margin:0 auto 12px;box-shadow:0 8px 24px rgba(0,0,0,.45);">` : ''}
+      ${logoUrl ? `<img src="${logoUrl}" alt="logo" style="width:250px;height:64px;border-radius:14px;object-fit:cover;display:block;margin:0 auto 12px;box-shadow:0 8px 24px rgba(0,0,0,.45);">` : ''}
       <span style="font-size:22px;font-weight:600;display:block;">Accede a tu agente iniciador de proyectos IA</span>
       <span style="font-size:14px;font-weight:400;opacity:.8;display:block;margin-top:6px;">consultorainteligenciaartificial.es</span>
     `;
@@ -433,7 +433,7 @@ add_shortcode('consultoria_gpt', function() {
     --bubble-user-border:#4338ca;
   }
   .wrap{ position:absolute; inset:0; display:flex; flex-direction:column; width:100%; height:100%; margin:0; border:none; border-radius:0; overflow:hidden; background:var(--surface); box-shadow:none; }
-  .header{ position:relative; text-align:center; padding:26px 18px 20px; background:linear-gradient(160deg,#0d1021,#131b32); border-bottom:1px solid rgba(99,102,241,.25); }
+  .header{ position:relative; text-align:center; padding:26px 18px 20px; border-bottom:1px solid rgba(99,102,241,.25); }
   .logout{ position:absolute; top:14px; right:14px; background:rgba(15,23,42,.55); border:1px solid rgba(99,102,241,.4); color:#e0e7ff; cursor:pointer; font-size:13px; border-radius:999px; padding:6px 14px; letter-spacing:.02em; transition:background .2s,border-color .2s; }
   .logout:hover{ background:rgba(99,102,241,.2); border-color:rgba(129,140,248,.6); }
   .header img{ max-height:64px; margin:0 auto 10px; display:block; border-radius:14px; box-shadow:0 12px 30px rgba(15,23,42,.45); }
