@@ -578,15 +578,10 @@ add_shortcode('consultoria_gpt', function() {
   let sending = false;
   let contactSubmitted = localStorage.getItem('ciContactSubmitted') === '1';
   let contactPrompted = false;
-  const contactThreshold = 4;
 
   function promptsContact(text){
     if(!text) return false;
     return /(formulario|tel[eé]fono|deja(?:r)? tu nombre|compart(?:e|ir) tu nombre|contact[aá]nos|contacto)/i.test(text);
-  }
-
-  function userMessageCount(){
-    return history.filter(m => m.role === 'user').length;
   }
 
   function setContactStatus(text, type){
@@ -618,7 +613,7 @@ add_shortcode('consultoria_gpt', function() {
       contactBox.classList.remove('visible');
       return;
     }
-    const shouldShow = contactPrompted || userMessageCount() >= contactThreshold;
+    const shouldShow = contactPrompted;
     contactBox.classList.toggle('visible', shouldShow);
     if (!shouldShow){
       setContactStatus('', '');
