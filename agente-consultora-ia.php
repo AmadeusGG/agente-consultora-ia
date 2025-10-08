@@ -439,7 +439,7 @@ add_shortcode('consultoria_gpt', function() {
   .header img{ max-height:150px; margin:0 auto 10px; display:block; border-radius:14px; box-shadow:0 12px 30px rgba(15,23,42,.45); }
   .title{ margin:6px 0 4px; font-size: clamp(20px,2.6vw,26px); font-weight:700; letter-spacing:.03em; text-transform:uppercase; color:#f1f5f9; }
   .desc{ margin:0 auto; max-width:800px; font-size:clamp(13px,2vw,15px); color:#cbd5f5; line-height:1.6; }
-  .chips{ display:flex; gap:10px; flex-wrap:wrap; justify-content:center; background:var(--surface-alt); overflow-x:auto; scroll-snap-type:x mandatory; }
+  .chips{ display:flex; gap:10px; flex-wrap:wrap; justify-content:center; overflow-x:auto; scroll-snap-type:x mandatory; }
   .chip{ scroll-snap-align:start; padding:9px 14px; border-radius:999px; border:1px solid var(--chip-border); background:var(--chip); cursor:pointer; font-size:clamp(12px,1.8vw,14px); color:var(--chip-text); white-space:nowrap; box-shadow:0 2px 0 rgba(0,0,0,.16); transition: transform .12s, box-shadow .12s, border-color .12s; }
   .chip:hover{ transform:translateY(-1px); border-color:rgba(148,163,255,.6); box-shadow:0 6px 14px rgba(15,23,42,.45); }
   .chip:active{ transform:translateY(0); }
@@ -514,12 +514,6 @@ add_shortcode('consultoria_gpt', function() {
         ${logoUrl ? `<img src="${logoUrl}" alt="Consultora Inteligencia Artificial">` : ''}
         <div class="title">Consultora Inteligencia Artificial</div>
         <p class="desc">Te ayudo a definir tu proyecto de Inteligencia Artificial y recojo la información clave para que un especialista humano lo ponga en marcha contigo.</p>
-      </div>
-      <div class="chips" id="chips">
-        <button class="chip" data-q="Quiero lanzar un proyecto de IA y necesito orientación inicial">Quiero lanzar un proyecto de IA</button>
-        <button class="chip" data-q="Necesito automatizar tareas con inteligencia artificial">Automatizar tareas con IA</button>
-        <button class="chip" data-q="Busco crear un asistente o chatbot para mis clientes">Crear un asistente IA</button>
-        <button class="chip" data-q="Quiero mejorar mis procesos con análisis de datos e IA">Mejorar procesos con datos</button>
       </div>
       <div class="msgs" id="msgs"></div>
       <div class="contact" id="contact-box">
